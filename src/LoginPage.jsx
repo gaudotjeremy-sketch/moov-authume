@@ -11,7 +11,7 @@ export default function LoginPage({ onLogin }) {
     setError("");
 
     try {
-      const res = await fetch("https://script.google.com/macros/s/TON_SCRIPT_ID/exec?path=checkPassword&password=" + password);
+      const res = await fetch("https://script.google.com/macros/s/AKfycbxAsE56jos_5kHUTFPlyf-qmBK8gE2Qk7uVadiVoU8MZmYm3JsGP6Bkm9JU5JGXeLZK/exec" + password);
       const data = await res.json();
 
       if (data.status === "OK") {
