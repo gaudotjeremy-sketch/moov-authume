@@ -16,4 +16,7 @@ export default function App() {
     <div className="app">
       {page === "login" && <LoginPage onLogin={handleLogin} />}
       {page === "admin" && <AdminPanel onLogout={() => setPage("login")} />}
-      {page === "scanner" && <ScannerPage onLogout={() => setPage
+      {page === "scanner" && <ScannerPage onLogout={() => setPage("login")} />}
+    </div>
+  );
+}
