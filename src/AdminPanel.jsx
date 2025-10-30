@@ -7,7 +7,7 @@ export default function AdminPanel({ onLogout }) {
 
   const fetchData = async () => {
     setLoading(true);
-    const res = await fetch("https://script.google.com/macros/s/TON_SCRIPT_ID/exec?path=" + tab);
+    const res = await fetch("https://script.google.com/macros/s/AKfycbxAsE56jos_5kHUTFPlyf-qmBK8gE2Qk7uVadiVoU8MZmYm3JsGP6Bkm9JU5JGXeLZK/exec?path=" + tab);
     const json = await res.json();
     setData(json);
     setLoading(false);
